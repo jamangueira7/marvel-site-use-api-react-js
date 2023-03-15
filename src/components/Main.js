@@ -8,12 +8,12 @@ export const Main = () => {
     const baseURL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${publicKey}&hash=${md5hash}`;
 
     const [url, setUrl] = useState(baseURL);
-    const [item, setItem] = useState();
+    const [items, setItems] = useState();
 
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(url);
-            setItem(res.data.data.results)
+            setItems(res.data.data.results)
         }
 
         fetch();
@@ -30,13 +30,12 @@ export const Main = () => {
                 </div>
             </header>
             <main>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+
+                {
+                    items && items.map(item => {
+                        return <Card key={item.id} item={item}/>
+                    })
+                }
             </main>
         </>
     );
