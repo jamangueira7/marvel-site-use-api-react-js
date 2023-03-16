@@ -32,7 +32,9 @@ export const Main = () => {
             <main>
 
                 {
-                    items && items.map(item => {
+                    !items
+                        ? <div className="error">An error occurred, contact an administrator.</div>
+                        : items.map(item => {
                         return <Card key={item.id} item={item}/>
                     })
                 }

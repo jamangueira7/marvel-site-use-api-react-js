@@ -1,42 +1,52 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --text-color: #0F172A;
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
 }
 
 body {
+    font-size: 1.6rem;
     background-color: #0B0A08;
 }
 
 main {
     width: 80%;
-    margin: 3rem auto;
+    margin: 0.3rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 0.1rem;
 }
 
 p {
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 header .bg img {
     width: 100%;
-    height: 550px;
+    height: 5.5rem;
 }
 
 header .search {
     outline: none;
     background: none;
-    margin-left: 2rem;
-    width: 350px;
-    height: 35px;
-    border-radius: 1rem;
+    margin-left: 0.2rem;
+    width: 35rem;
+    height: 3.5rem;
+    border-radius: 0.1rem;
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 1.2rem;
-    border: 2px solid #B41F23;
+    border: 0.2rem solid #B41F23;
 }
 
 .search-bar {
@@ -47,16 +57,16 @@ header .search {
 }
 
 header .search-bar img {
-    width: 200px;
-    height: 80px;
+    width: 20rem;
+    height: 8rem;
 }
 
 .card {
     background-color: #B41F23;
     color: white;
     position: relative;
-    margin-top: 3rem;
-    padding: 1.5px;
+    margin-top: 0.3rem;
+    padding: 1.5rem;
 }
 
 .card img {
@@ -71,8 +81,8 @@ header .search-bar img {
 
 .card .title {
     text-align: center;
-    padding: 1rem;
-    font-size: 17px;
+    padding: 0.1rem;
+    font-size: 1.7rem;
 }
 
 .card::after,
@@ -84,17 +94,58 @@ header .search-bar img {
 }
 
 .card::before {
-    bottom: -2rem;
+    bottom: -0.2rem;
     left: 0;
     width: 75%;
     height: 3em;
 }
 
 .card::after {
-    bottom: -2rem;
+    bottom: -0.2rem;
     right: 0.9em;
     width: 41%;
     height: 5em;
     transform: rotate(-38deg);
-    box-sizing: 1rem;
+    box-sizing: 0.1rem;
+}
+
+.box-content {
+    width: 100%;
+    margin: 0 auto;
+    height: 60rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(marvel.jpg);
+    color: white;
+    font-size: 1.3rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-box {
+    flex-basis: 20%;
+}
+
+.left-box {
+    flex-basis: 50%;
+}
+
+.box-content img {
+    width: 30rem;
+    height: 40rem;
+    border: 0.1rem solid white;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
+    transform: rotate(20deg);
+    transition: 0.5s;
+}
+
+.box-content img:hover {
+    transform: rotate(0deg);
+}
+
+.error {
+    color: white;
+    font-size: 5rem;
+    margin: 0 auto;
+    padding: 5rem;
 }
