@@ -1,5 +1,7 @@
-| [Como rodar](Tecnologias) | [Projeto](#-projeto) | [Como rodar](#-como-rodar) | [Como contribui](#-como-contribuir) |
-|  :---:  |  :----:  |  :---:  |:-------------------------:|
+
+| [Como rodar](Tecnologias) |    [Projeto](#-projeto)     |   [Como rodar](#-como-rodar)   | [Como contribui](#-como-contribuir) |
+|:--------------------------|:---------------------------:|:------------------------------:|------------------------------------:|
+
 
 # Site com heróis marvel
 
