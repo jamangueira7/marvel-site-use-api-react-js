@@ -4,11 +4,10 @@
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
   </p>
-
+(Como rodar)[#-como-rodar]
 <br>
 
-
-## Site com herois marvel
+# Site com heróis marvel
 
 ## 🚀 Tecnologias
 
@@ -22,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Site mostrando os cards dos herois Marvel.
+Site mostrando os cards dos herois Marvel. Clicando em cima do card abre uma pagina de detalhes.
 
 ![img.png](.github%2Fimg.png)
 ![img.png](.github%2Fimg.png)
