@@ -21,8 +21,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Site mostrando os cards dos herois Marvel. Clicando em cima do card abre uma pagina de detalhes.
 
 ![img.png](.github%2Fimg.png)
-![img.png](.github%2Fimg.png)
-
+![img_1.png](.github%2Fimg_1.png)
+![img_2.png](.github%2Fimg_2.png)
 
 Inspirado na video aula do canal - [
 Imaginary Engineering](https://www.youtube.com/watch?v=WpnCjosdhGs)
