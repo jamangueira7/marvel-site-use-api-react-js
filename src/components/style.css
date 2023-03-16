@@ -7,14 +7,16 @@
 }
 
 :root {
-    --text-color: #0F172A;
+    --text-color: white;
+    --main-color: #0B0A08;
+    --border-color: #B41F23;
     font-size: 62.5%;
     font-family: "Inter", sans-serif;
 }
 
 body {
     font-size: 1.6rem;
-    background-color: #0B0A08;
+    background-color: var(--main-color);
 }
 
 main {
@@ -26,7 +28,7 @@ main {
 }
 
 p {
-    color: white;
+    color: var(--text-color);
     text-align: center;
     font-size: 2.5rem;
 }
@@ -43,10 +45,10 @@ header .search {
     width: 35rem;
     height: 3.5rem;
     border-radius: 0.1rem;
-    color: white;
+    color: var(--text-color);
     font-size: 2rem;
     padding: 1.2rem;
-    border: 0.2rem solid #B41F23;
+    border: 0.2rem solid var(--border-color);
 }
 
 .search-bar {
@@ -62,8 +64,8 @@ header .search-bar img {
 }
 
 .card {
-    background-color: #B41F23;
-    color: white;
+    background-color: var(--border-color);
+    color: var(--text-color);
     position: relative;
     margin-top: 0.3rem;
     padding: 1.5rem;
@@ -89,7 +91,7 @@ header .search-bar img {
 .card::before {
     content: '';
     position: absolute;
-    background: #B41F23;
+    background: var(--border-color);
     z-index: -1;
 }
 
@@ -114,7 +116,7 @@ header .search-bar img {
     margin: 0 auto;
     height: 60rem;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(marvel.jpg);
-    color: white;
+    color: var(--text-color);
     font-size: 1.3rem;
     text-align: justify;
     display: flex;
@@ -133,7 +135,7 @@ header .search-bar img {
 .box-content img {
     width: 30rem;
     height: 40rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid var(--text-color);
     box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
     transform: rotate(20deg);
     transition: 0.5s;
@@ -144,7 +146,7 @@ header .search-bar img {
 }
 
 .error {
-    color: white;
+    color: var(--text-color);
     font-size: 5rem;
     margin: 0 auto;
     padding: 5rem;
