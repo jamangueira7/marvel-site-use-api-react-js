@@ -6,9 +6,7 @@ export const Marvel = () => {
     const { id } = useParams();
     const [item, setItem] = useState();
 
-    const md5hash = `c47295561127eec2e6efc378a64f0d4a`;
-    const publicKey = `87972729642c1e41dcba909747394e95`;
-    const baseURL = `http://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=${publicKey}&hash=${md5hash}`;
+    const baseURL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${process.env.REACT_APP_MD5_HASH}`;
 
     useEffect(() => {
         const fetch = async () => {

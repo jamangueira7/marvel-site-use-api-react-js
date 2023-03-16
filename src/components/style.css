@@ -15,16 +15,15 @@
 }
 
 body {
-    font-size: 1.6rem;
     background-color: var(--main-color);
 }
 
 main {
     width: 80%;
-    margin: 0.3rem auto;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 0.1rem;
+    grid-gap: 1rem;
 }
 
 p {
@@ -35,16 +34,16 @@ p {
 
 header .bg img {
     width: 100%;
-    height: 5.5rem;
+    height: 55rem;
 }
 
 header .search {
     outline: none;
     background: none;
-    margin-left: 0.2rem;
+    margin-left: 2rem;
     width: 35rem;
     height: 3.5rem;
-    border-radius: 0.1rem;
+    border-radius: 1rem;
     color: var(--text-color);
     font-size: 2rem;
     padding: 1.2rem;
@@ -67,8 +66,8 @@ header .search-bar img {
     background-color: var(--border-color);
     color: var(--text-color);
     position: relative;
-    margin-top: 0.3rem;
-    padding: 1.5rem;
+    margin-top: 6rem;
+    padding: 0.2rem;
 }
 
 .card img {
@@ -83,7 +82,7 @@ header .search-bar img {
 
 .card .title {
     text-align: center;
-    padding: 0.1rem;
+    padding: 1rem;
     font-size: 1.7rem;
 }
 
@@ -96,19 +95,19 @@ header .search-bar img {
 }
 
 .card::before {
-    bottom: -0.2rem;
+    bottom: -2em;
     left: 0;
     width: 75%;
     height: 3em;
 }
 
 .card::after {
-    bottom: -0.2rem;
+    bottom: -2em;
     right: 0.9em;
     width: 41%;
     height: 5em;
     transform: rotate(-38deg);
-    box-sizing: 0.1rem;
+    box-sizing: 1rem;
 }
 
 .box-content {
@@ -131,6 +130,7 @@ header .search-bar img {
 .left-box {
     flex-basis: 50%;
 }
+
 
 .box-content img {
     width: 30rem;
