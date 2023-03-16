@@ -31,6 +31,7 @@ Imaginary Engineering](https://www.youtube.com/watch?v=WpnCjosdhGs)
 
 - Clone o projeto.
 - Entre na pasta do projeto e rode `npm install`
+- Alterar o nome dos arquivo .env.example para .env e colocar suas credenciais.
 - Rode `npm start`
 
 ## 🤔 Como contribuir
