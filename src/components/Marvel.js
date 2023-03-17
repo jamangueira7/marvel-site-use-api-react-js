@@ -6,12 +6,13 @@ export const Marvel = () => {
     const { id } = useParams();
     const [item, setItem] = useState();
 
-    const baseURL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${process.env.REACT_APP_MD5_HASH}`;
+
+    const baseURL = `${process.env.REACT_APP_URL}/${id}?ts=1&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${process.env.REACT_APP_MD5_HASH}`;
 
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(baseURL);
-            setItem(res.data.data.results)
+            setItem(res.data.data.results[0])
         }
 
         fetch();

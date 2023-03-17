@@ -113,7 +113,7 @@ header .search-bar img {
 .box-content {
     width: 100%;
     margin: 0 auto;
-    height: 60rem;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(marvel.jpg);
     color: var(--text-color);
     font-size: 1.3rem;
@@ -150,4 +150,44 @@ header .search-bar img {
     font-size: 5rem;
     margin: 0 auto;
     padding: 5rem;
+}
+
+.new-page {
+    width: 100%;
+    height: 15rem;
+    padding: 5rem 1.6rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bnt-move {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    width: 15rem;
+    height: 5rem;
+    margin: 1rem;
+    background-color: white;
+    color: var(--border-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--border-color);
+
+}
+
+.bnt-move:hover {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--border-color);
+    color: white;
+    font-size: 2rem;
+}
+
+button[type="submit"]:disabled {
+    background: #d3d3d3;
+    opacity: 0.3;
+    cursor: not-allowed;
 }
