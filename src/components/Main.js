@@ -16,9 +16,8 @@ export const Main = () => {
     useEffect(() => {
         const fetch = async () => {
             const res = await axios.get(url);
-            setItems(res.data.data.results)
-            setTotal(res.data.data.total)
-            console.log(res)
+            setItems(res.data.data.results);
+            setTotal(res.data.data.total);
         }
 
         fetch();
